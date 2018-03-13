@@ -7,6 +7,19 @@ body {
 body.daytime {
     background-color: rgb(255, 238, 0);
 }
+/* stars */
+#stars-container {
+    margin: 0 auto;
+    width: 600px;
+}
+img#stars {
+    position: relative;
+    top: 0;
+    transition: top 1s;
+}
+img#stars.daytime {
+    top: -300px;
+}
 /*Switch + transition */
 #slider {
     background-color: #d3d3d3;
@@ -24,7 +37,7 @@ div#toggler {
     width: 51px;
     border-radius: 25px;
     left: 0;
-    transition: left 1s;
+    transition: left 0.6s ease-in-out;
     z-index: 7;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
 }
@@ -38,7 +51,7 @@ div#toggler.on {
     width: 800px;
     background-color: rgb(40, 1, 58);
     border-radius: 400px;
-    margin: 100px auto;
+    margin: 0 auto;
     margin-bottom: -400px;
     z-index: 1;
     transition: background-color 1s ease;

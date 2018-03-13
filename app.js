@@ -13,6 +13,10 @@ let innerCircle = document.getElementById("innerCircle");
 //variable for the body to change the background
 let pageBody = document.querySelector("body");
 
+//variable for stars
+let stars = document.getElementById("stars");
+
+
 //listen for click event, add/remove 'on' ckass
 slider.addEventListener('click', function() {
     //add class for switch animation
@@ -28,6 +32,9 @@ slider.addEventListener('click', function() {
     innerCircle.classList.toggle('daytime');
     //change body background
     pageBody.classList.toggle('daytime');
+
+    //toggle stars
+    stars.classList.toggle('daytime');
 });
 // toggler.addEventListener('click', function() {
 //     console.log('this works');
