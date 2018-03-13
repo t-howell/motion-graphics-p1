@@ -36,41 +36,4 @@ slider.addEventListener('click', function() {
     //toggle stars
     stars.classList.toggle('daytime');
 });
-// toggler.addEventListener('click', function() {
-//     console.log('this works');
-//     toggler.classList.toggle("on");
-// });
-// //Check that page is loaded
-// document.addEventListener("DOMContentLoaded", ready, false);
-
-// //when page is ready, set up animation
-// function ready() {
-//     document.getElementById("switch").onclick = function() {
-//         let toggler = document.getElementById("toggler");
-//         toggler.classList.toggle('on');
-
-//         function move(elem) {
-//             let left = 0;
-//             function frame() {
-//                 left++;
-//                 elem.style.left = left + 'px';
-//                 if (left == 400) {
-//                     clearInterval(id);
-//                 };
-//             };
-//             let id = setInterval(frame, 1);
-//         };
-//     };
-// };
-
-//JQuery toggle button
-
-// $(document).ready(function() {
-//     $("#switch").click(function(event) {
-//         //$(this).children(":first-child").css("left", "0").animate({left: "+=100"});
-//        $(this).children(":first-child").toggleClass("on");
-//     });
-// });
-
-//Take 3
 
