@@ -1,0 +1,110 @@
+/* general styles */
+body {
+    margin: 0 auto;
+    background-color: rgb(15, 0, 15);
+    transition: background-color 1s ease;
+}
+body.daytime {
+    background-color: rgb(255, 238, 0);
+}
+/*Switch + transition */
+#slider {
+    background-color: #d3d3d3;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    margin: 0 auto;
+    z-index: 6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575) inset;
+}
+div#toggler {
+    position: relative;
+    background: radial-gradient(#dfdfdf, #797979);
+    height: 51px;
+    width: 51px;
+    border-radius: 25px;
+    left: 0;
+    transition: left 1s;
+    z-index: 7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+}
+div#toggler.on {
+    left: 100px;
+}
+/* OUTER CIRCLE + TRANSITION */
+#outerCircle {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    background-color: rgb(40, 1, 58);
+    border-radius: 400px;
+    margin: 100px auto;
+    margin-bottom: -400px;
+    z-index: 1;
+    transition: background-color 1s ease;
+}
+div#outerCircle.daytime {
+    background-color: #ffae44;
+}
+/* div#outerCircle.daytime {
+    animation: outerDaytime 1s ease-in-out 0s 1 normal forwards;
+}
+@keyframes outerDaytime {
+    0% {
+        background-color: rgb(40, 1, 58);
+    }
+    100% {
+        background-color: rgb(147, 185, 221);
+    }
+} */
+/* MIDDLE CIRCLE + TRANSITION */
+#middleCircle {
+    position: relative;
+    top: 100px;
+    background-color: rgb(87, 0, 128);
+    height: 600px;
+    width: 600px;
+    border-radius: 300px;
+    margin: 0 auto;
+    z-index: 2;
+    transition: background-color 1s ease;
+}
+div#middleCircle.daytime {
+    background-color: rgb(116, 188, 255);
+}
+/* INNER CIRCLE + TRANSITION */
+#innerCircle {
+    position: relative;
+    top: 100px;
+    background-color: rgb(76, 0, 255);
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    margin: 0 auto;
+    z-index: 3;
+    transition: background-color 1s ease;
+}
+div#innerCircle.daytime {
+    background-color: rgb(25, 144, 255);
+}
+/* SUN AND MOON + TRANSITION*/
+#sun-moon {
+    position: relative;
+    margin: 0 auto;
+    z-index: 4;
+    top: -100px;
+    left: -100px;
+    transition: all 1s ease-in-out;
+}
+img#sun-moon.sun {
+    transform: rotate(180deg);
+}
+/* FOREGROUND */
+#ground {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    padding-top: 100px;
+}
